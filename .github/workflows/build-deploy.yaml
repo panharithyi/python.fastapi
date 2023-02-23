@@ -5,9 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: pulling git repo
-        uses: action/checkout@v2
-        with:
-          repository: panharithyi/python.fastapi
+        uses: actions/checkout@v2
       - name: install python version 3.9
         uses: actions/setup-python@v2
         with:
